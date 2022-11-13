@@ -67,7 +67,12 @@ body {
   cursor: pointer;
 }
 .burger-btn:hover, .burger-btn:focus {
-  fill: tomato;
+  fill: #fab906;
+}
+@media screen and (min-width: 992px) {
+  .burger-btn {
+    display: none;
+  }
 }
 
 .icon-color {
@@ -118,6 +123,17 @@ body {
 
 .header-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+}
+
+.menu {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

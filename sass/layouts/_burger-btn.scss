@@ -5,7 +5,11 @@
 
   &:hover,
   &:focus {
-    fill: tomato;
+    fill: #fab906;
+  }
+
+  @include size-992 {
+    display: none;
   }
 }
 
