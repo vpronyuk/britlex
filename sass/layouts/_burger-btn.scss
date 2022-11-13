@@ -1,0 +1,25 @@
+.burger-btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: tomato;
+  }
+}
+
+.icon-color {
+  width: 34px;
+  height: 19px;
+
+  @include size-575 {
+    width: 43px;
+    height: 24px;
+  }
+
+  @include size-768 {
+    width: 30px;
+    height: 17px;
+  }
+}

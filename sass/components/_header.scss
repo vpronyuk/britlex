@@ -1,6 +1,26 @@
 .header {
   padding-top: 36px;
   padding-bottom: 29px;
+
+  @include size-575 {
+    padding-top: 39px;
+    padding-bottom: 11px;
+  }
+
+  @include size-768 {
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+
+  @include size-992 {
+    padding-top: 30px;
+    padding-bottom: 68px;
+  }
+
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .header-container {

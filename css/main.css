@@ -50,10 +50,70 @@ body {
 .logo__decor--light {
   color: #939393;
 }
+@media screen and (min-width: 575px) {
+  .logo {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    font-size: 36px;
+  }
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.burger-btn:hover, .burger-btn:focus {
+  fill: tomato;
+}
+
+.icon-color {
+  width: 34px;
+  height: 19px;
+}
+@media screen and (min-width: 575px) {
+  .icon-color {
+    width: 43px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon-color {
+    width: 30px;
+    height: 17px;
+  }
+}
 
 .header {
   padding-top: 36px;
   padding-bottom: 29px;
+}
+@media screen and (min-width: 575px) {
+  .header {
+    padding-top: 39px;
+    padding-bottom: 11px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 68px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .header-container {

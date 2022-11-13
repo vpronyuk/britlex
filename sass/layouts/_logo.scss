@@ -10,4 +10,12 @@
   &__decor--light {
     color: $logo-light-color;
   }
+
+  @include size-575 {
+    font-size: 30px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+  }
 }
