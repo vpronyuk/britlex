@@ -1,0 +1,26 @@
+.about {
+  padding-bottom: 84px;
+  padding-right: 9px;
+  text-align: center;
+}
+.about__thumb {
+  margin-top: 24px;
+}
+.about__img {
+  display: block;
+  margin: 0 auto;
+}
+.about__text {
+  line-height: 1.5;
+  margin-bottom: 7px;
+}
+.top-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33;
+  color: $third-dark-color;
+}
+.bottom-text {
+  font-size: 15px;
+  line-height: 1.47;
+}

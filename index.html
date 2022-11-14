@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -21,13 +28,22 @@
         >
         <nav class="navigation">
           <ul class="menu">
-            <li><a href="#" class="menu__item"></a>Home</li>
-            <li><a href="#" class="menu__item"></a>Skills</li>
-            <li><a href="#" class="menu__item"></a>About Us</li>
-            <li><a href="#" class="menu__item"></a>Pricing</li>
-            <li><a href="#" class="menu__item"></a>Contacts</li>
+            <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"></a>Skills
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"></a>About Us
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"></a>Pricing
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"></a>Contacts
+            </li>
           </ul>
         </nav>
+        <button type="button" class="header__btn">Let’s Talk</button>
         <div class="burger-menu">
           <button class="burger-btn">
             <svg class="icon-color">
@@ -40,7 +56,7 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <div class="hero-img">
+          <div class="hero__thumb">
             <picture>
               <source
                 srcset="
@@ -78,13 +94,14 @@
                 media="(min-width: 320px)"
               />
               <img
+                class="hero__img"
                 src="./images/size-320/hero-320.png"
                 alt="Learn any foreign language picture"
               />
             </picture>
           </div>
           <h1 class="hero__title">Learn Any Foreign Language</h1>
-          <p>
+          <p class="hero__text">
             With our teachers who write a program for each student, you will be
             able to make your first sketch after the first lesson.
           </p>
@@ -94,9 +111,9 @@
       <section class="skills">
         <div class="container">
           <h2 class="title">Skills</h2>
-          <ul>
-            <li>
-              <div class="skills-img">
+          <ul class="skills__list">
+            <li class="skills__item">
+              <div class="skills__thumb">
                 <picture>
                   <source
                     srcset="
@@ -134,23 +151,25 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="skills__img"
                     src="./images/size-320/speak-320.png"
                     alt="Speaking skills improving picture"
                   />
                 </picture>
               </div>
               <h3 class="subtitle">Speaking</h3>
-              <p>
+              <p class="skills__text">
                 Improve your English skills and confidence. Live classes and
                 interactive lessons online. 20% extra free for a limited time
-                only Learn English online and improve your skills through our
+                only<br /><br />
+                Learn English online and improve your skills through our
                 high-quality courses and resources – all designed for adult
                 language learners.
               </p>
-              <button type="button" class="btn">Learn more</button>
+              <button type="button" class="btn skills__btn">Learn more</button>
             </li>
-            <li>
-              <div class="skills-img">
+            <li class="skills__item">
+              <div class="skills__thumb">
                 <picture>
                   <source
                     srcset="
@@ -188,21 +207,22 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="skills__img"
                     src="./images/size-320/write-320.png"
                     alt="Writing skills improving picture"
                   />
                 </picture>
               </div>
               <h3 class="subtitle">Writing</h3>
-              <p>
+              <p class="skills__text">
                 One of the most important and extensive areas of natural
                 science, the science that studies substances, also their
                 composition
               </p>
-              <button type="button" class="btn">Learn more</button>
+              <button type="button" class="btn skills__btn">Learn more</button>
             </li>
-            <li>
-              <div class="skills-img">
+            <li class="skills__item">
+              <div class="skills__thumb">
                 <picture>
                   <source
                     srcset="
@@ -240,20 +260,21 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="skills__img"
                     src="./images/size-320/read-320.png"
                     alt="Reading skills improving picture"
                   />
                 </picture>
               </div>
               <h3 class="subtitle">Reading</h3>
-              <p>
+              <p class="skills__text">
                 perception and response actions of the user resulting from the
                 use and or up coming use of the product, system or service
               </p>
-              <button type="button" class="btn">Learn more</button>
+              <button type="button" class="btn skills__btn">Learn more</button>
             </li>
-            <li>
-              <div class="skills-img">
+            <li class="skills__item">
+              <div class="skills__thumb">
                 <picture>
                   <source
                     srcset="
@@ -291,17 +312,18 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="skills__img"
                     src="./images/size-320/listen-320.png"
                     alt="Listening skills improving picture"
                   />
                 </picture>
               </div>
               <h3 class="subtitle">Listening</h3>
-              <p>
+              <p class="skills__text">
                 Here you can find activities to practise your listening skills.
                 Listening will help you to improve your understanding
               </p>
-              <button type="button" class="btn">Learn more</button>
+              <button type="button" class="btn skills__btn">Learn more</button>
             </li>
           </ul>
         </div>
@@ -309,7 +331,7 @@
       <section class="about">
         <div class="container">
           <h2 class="title">About Us</h2>
-          <div class="about-img">
+          <div class="about__thumb">
             <picture>
               <source
                 srcset="
@@ -347,12 +369,13 @@
                 media="(min-width: 320px)"
               />
               <img
+                class="about__img"
                 src="./images/size-320/about-320.png"
                 alt="Continious improving picture"
               />
             </picture>
           </div>
-          <p>
+          <p class="about__text">
             The model offers a framework for discussing problems related to the
             user's experience, as well as possible ways and means of solving
             them. Application development begins at the top level (strategy),
@@ -379,9 +402,9 @@
       <section class="pricing">
         <div class="container">
           <h2 class="title">Pricing</h2>
-          <ul>
+          <ul class="pricing__list">
             <li>
-              <div class="pricing-img">
+              <div class="pricing__thumb">
                 <picture>
                   <source
                     srcset="
@@ -419,20 +442,21 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="pricing__img"
                     src="./images/size-320/onl-test-320.png"
                     alt="Online test picture"
                   />
                 </picture>
               </div>
               <h3 class="pricing-subtitle">Self-study online course</h3>
-              <p>
+              <p class="pricing__text">
                 Start learning English online in live classes with qualified EC
                 teachers and students from all over the world.
               </p>
               <p class="pricing-value">£5.99 per month</p>
             </li>
             <li>
-              <div class="pricing-img">
+              <div class="pricing__thumb">
                 <picture>
                   <source
                     srcset="
@@ -470,19 +494,20 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="pricing__img"
                     src="./images/size-320/lesson-320.png"
                     alt="Online classes picture"
                   />
                 </picture>
               </div>
               <h3 class="pricing-subtitle">Live online classes</h3>
-              <p>
+              <p class="pricing__text">
                 Interactive group classes with expert teachers. Free 7-day trial
               </p>
               <p class="pricing-value">£12.99 per month</p>
             </li>
             <li>
-              <div class="pricing-img">
+              <div class="pricing__thumb">
                 <picture>
                   <source
                     srcset="
@@ -520,13 +545,14 @@
                     media="(min-width: 320px)"
                   />
                   <img
+                    class="pricing__img"
                     src="./images/size-320/webinar-320.png"
                     alt="Webinar picture"
                   />
                 </picture>
               </div>
               <h3 class="pricing-subtitle">Personal Tuition</h3>
-              <p>
+              <p class="pricing__text">
                 Online one-to-one English tutoring – enjoy our first session for
                 only $1
               </p>

@@ -1,0 +1,51 @@
+.skills {
+  padding-bottom: 50px;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.skills__item {
+  padding: 8px 16px 45px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.skills__thumb {
+  margin-bottom: 10px;
+}
+
+.skills__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 4.44;
+  color: $second-dark-color;
+}
+
+.skills__text {
+  line-height: 1.54;
+}
+
+.btn {
+}
+
+.skills__btn {
+  margin-top: 31px;
+  padding: 14px 43px;
+  background-color: $second-dark-color;
+  border-radius: 5px;
+  height: 50px;
+  min-width: 178px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $btn-light-color;
+}

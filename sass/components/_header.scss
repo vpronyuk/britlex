@@ -34,7 +34,38 @@
 
   @include size-992 {
     display: flex;
+    // margin-right: 100px;
+    // margin-left: 167px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
+  }
+}
+.menu__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $second-dark-color;
+
+  &:hover,
+  &:focus {
+    color: $interactive-color;
+  }
+}
+
+.header__btn {
+  display: none;
+
+  @include size-992 {
+    margin-right: 0;
+    display: block;
+    padding: 12px 40px;
+    border: 2px solid $second-dark-color;
+    border-radius: 5px;
+    background-color: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $main-dark-color;
   }
 }

@@ -1,0 +1,49 @@
+.hero {
+  padding-bottom: 53px;
+  text-align: center;
+}
+
+.hero-container {
+}
+.hero__thumb {
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__title {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $main-dark-color;
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn {
+}
+.hero-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 33px;
+  padding: 18px 99px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: $second-dark-color;
+  border: none;
+  border-radius: 5px;
+  color: $btn-light-color;
+  width: 100%;
+  height: 60px;
+}
