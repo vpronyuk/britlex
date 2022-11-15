@@ -37,6 +37,30 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 575px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    padding-left: 131px;
+    padding-right: 131px;
+  }
+}
 
 .logo {
   font-size: 24px;
@@ -99,6 +123,12 @@ body {
   color: #000000;
 }
 
+.mob-container {
+  padding-left: 40px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .header {
   padding-top: 36px;
   padding-bottom: 29px;
@@ -140,10 +170,19 @@ body {
 @media screen and (min-width: 992px) {
   .menu {
     display: flex;
+    margin-right: 100px;
+    margin-left: 167px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1600px) {
+  .menu {
+    margin-right: 121px;
+    margin-left: 236px;
+    gap: 50px;
   }
 }
 
@@ -154,7 +193,7 @@ body {
   color: #263238;
 }
 .menu__item:hover, .menu__item:focus {
-  color: #fab906;
+  color: rgba(6, 83, 250, 0.5019607843);
 }
 
 .header__btn {
@@ -172,6 +211,63 @@ body {
     line-height: 1.5;
     color: #000000;
   }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  z-index: 1;
+}
+.mob-menu > .mob-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.add-close__btn {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  background-color: transparent;
+  border: transparent;
+}
+.add-close__btn:hover {
+  fill: rgba(6, 83, 250, 0.5019607843);
+}
+
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #263238;
+  text-decoration: none;
+}
+.mob-menu__item:hover, .mob-menu__item:focus {
+  color: rgba(6, 83, 250, 0.5019607843);
+}
+
+.mob-menu__item--active {
+  color: rgba(6, 83, 250, 0.5019607843);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .hero {

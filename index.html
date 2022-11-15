@@ -45,16 +45,40 @@
         </nav>
         <button type="button" class="header__btn">Let’s Talk</button>
         <div class="burger-menu">
-          <button class="burger-btn">
+          <button class="burger-btn" data-menu-open>
             <svg class="icon-color">
               <use href="./images/icon.svg#icon-burger-btn"></use>
             </svg>
           </button>
         </div>
       </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <button type="button" class="add-close__btn" data-menu-close>
+            <svg class="addmenu__icon--close" width="40" height="40">
+              <use href="./images/icon.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list">
+            <li>
+              <a
+                class="mob-menu__item mob-menu__item--active"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="mob-menu__item" href="#skills">Skills</a>
+            </li>
+            <li><a class="mob-menu__item" href="#about">About us</a></li>
+            <li><a class="mob-menu__item" href="#pricing">Pricing</a></li>
+            <li><a class="mob-menu__item" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container hero-container">
           <div class="hero__thumb">
             <picture>
@@ -108,7 +132,7 @@
           <button type="button" class="btn hero-btn">Get started</button>
         </div>
       </section>
-      <section class="skills">
+      <!-- <section class="skills" id="skills">
         <div class="container">
           <h2 class="title">Skills</h2>
           <ul class="skills__list">
@@ -327,8 +351,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="about">
+      </section> -->
+      <!-- <section class="about" id="about">
         <div class="container">
           <h2 class="title">About Us</h2>
           <div class="about__thumb">
@@ -398,8 +422,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="pricing">
+      </section> -->
+      <!-- <section class="pricing" id="pricing">
         <div class="container">
           <h2 class="title">Pricing</h2>
           <ul class="pricing__list">
@@ -560,8 +584,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="contacts">
+      </section> -->
+      <!-- <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="title">Contact Us</h2>
           <div class="contact-img">
@@ -620,9 +644,9 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <a href="./index.html" class="logo logo__decor--dark"
           >Brit<span class="logo__decor--light">lex</span></a
@@ -633,6 +657,7 @@
           <li>Cookie Policy</li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

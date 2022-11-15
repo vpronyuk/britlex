@@ -2,5 +2,25 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @include size-575 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include size-768 {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @include size-992 {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @include desktop {
+    padding-left: 131px;
+    padding-right: 131px;
+  }
   // outline: 2px solid red;
 }
